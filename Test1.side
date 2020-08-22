@@ -1,0 +1,102 @@
+{
+  "id": "bafe67b3-cb81-4336-b706-9ec35aa17e32",
+  "version": "2.0",
+  "name": "Test1",
+  "url": "https://www.google.pl/",
+  "tests": [{
+    "id": "369cec0e-25d8-4109-92dc-7f1584d88083",
+    "name": "Untitled",
+    "commands": [{
+      "id": "1e90855c-d495-431d-b03f-7e309b318287",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0267636-09dd-495c-a01e-1882d5278c2b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "nasdaq"
+    }, {
+      "id": "1fb43f25-fa12-4738-a35d-e163b0da81cb",
+      "comment": "",
+      "command": "clickAt",
+      "target": "name=btnK",
+      "targets": [
+        ["name=btnK", "name"],
+        ["css=center:nth-child(2) > .gNO89b", "css:finder"],
+        ["xpath=//input[@name='btnK']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div[2]/div[2]/div[2]/center/input", "xpath:idRelative"],
+        ["xpath=//center/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a074ab8-0c67-40e1-8fb8-a0e054b35945",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.rc:nth-child(2) .LC20lb",
+      "targets": [
+        ["css=.rc:nth-child(2) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'NASDAQ - - Notowania indeksów światowych - Bankier.pl')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7683fb6-8c18-4f73-9519-1a38cb6ff1ae",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//button[@value='3M']", "xpath:attributes"],
+        ["xpath=//form[@id='wykresButton']/fieldset/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'3M')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f61a2e1d-618e-4a66-a0cd-ae6a63b399e5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.profilHead",
+      "targets": [
+        ["css=.profilHead", "css:finder"],
+        ["xpath=//div[@id='boxProfilHeader']/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'NASDAQ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc09db01-a2e9-43a4-bf8d-f3e04aab2085",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=NASDAQ",
+      "targets": [
+        ["css=#boxProfil > .boxContent", "css:finder"],
+        ["xpath=//div[@id='boxProfil']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bb00fd8d-63d5-4047-88d5-98402750d920",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["369cec0e-25d8-4109-92dc-7f1584d88083"]
+  }],
+  "urls": ["https://www.google.pl/"],
+  "plugins": []
+}
